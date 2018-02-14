@@ -1,5 +1,6 @@
 class Calculation
   attr_reader :amount, :sometimes_answers, :no_answers, :yes_answers
+
   def initialize
     @yes_answers = 0
     @no_answers = 0

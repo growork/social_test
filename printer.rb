@@ -16,13 +16,13 @@ class Printer
 
     questions.each do |item|
       puts item
-
       user_input = nil
 
       while user_input != "yes" && user_input != "no" && user_input != "sometimes" do
         puts "Введите yes, no или sometimes и нажмите Ввод"
         user_input = STDIN.gets.chomp
       end
+
       @calc.calculation_of_statistics(user_input)
     end
   end
