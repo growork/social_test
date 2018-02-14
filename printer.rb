@@ -1,9 +1,8 @@
-
 class Printer
-
   # Метод печати вопросов
   def q_print
     @calc = Calculation.new
+
     # Создание переменной с путём к файлу с вопросами
     @current_path = File.dirname(__FILE__)
     questions_path = @current_path + '/data/questions.txt'
